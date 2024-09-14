@@ -71,22 +71,22 @@ export default function Home() {
 
         <div className="mb-[32px]">
           <h2 className="text-[20px] font-medium mb-[16px]">Branding</h2>
-          <p className="text-[14px] leading-[24px]">Collaborating closely, we'll develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
+          <p className="text-[14px] leading-[24px]">Collaborating closely,we will develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
         </div>
 
         <div className="mb-[32px]">
           <h2 className="text-[20px] font-medium mb-[16px]">Branding</h2>
-          <p className="text-[14px] leading-[24px]">Collaborating closely, we'll develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
+          <p className="text-[14px] leading-[24px]">Collaborating closely,we will develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
         </div>
 
         <div className="mb-[32px]">
           <h2 className="text-[20px] font-medium mb-[16px]">Branding</h2>
-          <p className="text-[14px] leading-[24px]">Collaborating closely, we'll develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
+          <p className="text-[14px] leading-[24px]">Collaborating closely,we will develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
         </div>
 
         <div className="mb-[32px]">
           <h2 className="text-[20px] font-medium mb-[16px]">Branding</h2>
-          <p className="text-[14px] leading-[24px]">Collaborating closely, we'll develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
+          <p className="text-[14px] leading-[24px]">Collaborating closely,we will develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
         </div>
 
       </div>
@@ -101,7 +101,7 @@ export default function Home() {
       <div className="mb-[96px]">
         <h1 className="text-[24px] font-medium mb-[32px]">Testmonials</h1>
         <p className="text-[16px] leading-[24px] mb-[13px]">
-          “Omikhe is a remarkable artist. He grasps abstract ideas and transforms them into exceptional visuals. Throughout the years, I've witnessed him produce everything from small symbols to comprehensive adaptive web pages. He has crafted clothing items like tees and caps, promotional products, and professional literature.”
+          “Omikhe is a remarkable artist. He grasps abstract ideas and transforms them into exceptional visuals. Throughout the years, I have witnessed him produce everything from small symbols to comprehensive adaptive web pages. He has crafted clothing items like tees and caps, promotional products, and professional literature.”
         </p>
         <h2 className="text-[14px] font-medium">Chris Ellington</h2>
         <h3 className="text-[14px] leading-[24px]">Product Lead, Gatha</h3>
@@ -109,7 +109,7 @@ export default function Home() {
 
       <footer className="mb-[24px]">
         <div className="flex flex-col justify-center items-center mb-[16px]">
-          <h1 className="text-[48px] font-bold mb-[32px]">Let's talk!</h1>
+          <h1 className="text-[48px] font-bold mb-[32px]">Let&apos;s talk!</h1>
           <button className="p-[24px] bg-[#141414] rounded-full tex font-medium">omikhe265@gmail.com</button>
         </div>
         <h2 className="mb-[16px]">2023© — Made by Omikhe</h2>
