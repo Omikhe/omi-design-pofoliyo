@@ -40,7 +40,7 @@ export default function Home() {
       <div>
         <div className="flex justify-between">
           <h1 className="text-[24px] font-medium">Projects</h1>
-          <button className="text-[14px] font-medium">More 2 -></button>
+          <button className="text-[14px] font-medium">More</button>
         </div>
         <p className="text-[14px] mb-[35px]">As a seasoned creator of contemporary, user-friendly web designs and digital solutions, I aim to assist you in constructing the brand of your fantasies.</p>
         <div className="mb-[49px]">
