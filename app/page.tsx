@@ -28,11 +28,11 @@ export default function Home() {
         <div className="flex justify-between space-x-10">
           <div className="flex flex-col">
 
-            <h1 className="font-bold text-[20px]">Let's Talk</h1>
+            <h1 className="font-bold text-[20px]">Let&apos;s Talk</h1>
             <h3 className="text-[14px]">omikhe265@gmail.com</h3>
 
           </div>
-          <p className="text-[14px]">Hello, I'm Omikhe, an online product designer focusing on brand identity, advertising, and no-code instruments.</p>
+          <p className="text-[14px]">Hello, I&apos;m Omikhe, an online product designer focusing on brand identity, advertising, and no-code instruments.</p>
         </div>
       </div>
 
