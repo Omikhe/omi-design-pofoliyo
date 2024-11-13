@@ -1,14 +1,16 @@
+import Link from 'next/link';
 export default function Sidenav() {
     return (
         <>
-            <div className="flex flex-col w-full h-screen min-h-screen items-start justify-center" >
-                <div className="flex w-full h-full">
+            <div>
+                <h1>Mike Andrew Msaka</h1>
+                <p>I stand at the precipice of day and night, my camera a loyal companion in my quest to capture the ineffable. With each sunset I frame, I bear witness to the death and rebirth of possibility—a daily ritual that reminds me that life is a constant interplay of order and chaos.</p>
 
-                    <div className="flex flex-col  bg-white px-28 w-1/3 justify-center">
-
-
-                    </div>
-
+                <div>
+                    <Link href="https://wa.me/265985626249">PHOTOGRAPHY</Link>
+                    <Link href="https://wa.me/265985626249">LOGOS</Link>
+                    <Link href="https://wa.me/265985626249">POSTER</Link>
+                    <Link href="https://wa.me/265985626249">ABOUT</Link>
                 </div>
             </div>
         </>
