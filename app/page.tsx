@@ -1,19 +1,21 @@
 // import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { Bars3Icon, ArrowDownIcon, ArrowRightIcon } from "@heroicons/react/16/solid";
 
 export default function Home() {
   return (
     <main className="px-[16px]">
-      <header className="w-[375px] h-[72px]">
-        <nav className="p-[16px] flex justify-between">
-          <h1 className="text-[24px] font-bold">Omikhe<sup>®</sup></h1>
-          <ul className="hidden md:flex">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
+      <header className="w-[375px] h-[72px] lg:w-full lg:mb-[46px]">
+        <nav className="pt-[8px] flex justify-between lg:flex-col lg:items-center">
+          <h1 className="text-[24px] font-bold lg:text-[32px] lg:font-bold">Omikhe<sup>®</sup></h1>
+          <ul className="hidden lg:flex lg:w-[470px] lg:h-[56px] lg:justify-between lg:bg-[#141414] lg:items-center lg:text-[20px] lg:rounded-full">
+            <li className="flex justify-center items-center h-[46px] w-[87px] mr-[16px] hover:bg-white hover:text-black rounded-full">Home</li>
+            <li className="flex justify-center items-center h-[46px] w-[131px] mr-[16px] hover:bg-white hover:text-black rounded-full"> <div className="flex rounded-full w-[20px] h-[20px] bg-[#C4C4C4] mr-[10px] text-[12px] justify-center items-center">20</div> Projects</li>
+            <li className="flex justify-center items-center h-[46px] w-[88px] mr-[16px] hover:bg-white hover:text-black rounded-full">About</li>
+            <li className="flex justify-center items-center h-[46px] w-[106px] ml-[5px] hover:bg-white hover:text-black rounded-full">Contact</li>
           </ul>
-          <div className="h-[32px] w-[32px] bg-white rounded-full ">
+          <div className="flex flex-col h-[32px] w-[32px]  rounded-full justify-center items-center">
+            <Bars3Icon className="w-[24px] h-[24px] text-white md:hidden" />
 
           </div>
 
@@ -22,9 +24,17 @@ export default function Home() {
       </header>
 
       {/* hero section */}
-      <div >
-        <h1 className="text-[48px] font-bold leading-tight text-center">Webistes & Branding</h1>
-        <button className="bg-slate-900 p-[8px] rounded-full bg-[#141414]">SCROLL DOWN</button>
+      <div className="mt-[150px]">
+        <div className="w-full flex justify-center items-center lg:w-full lg:flex lg:justify-center lg:items-center">
+
+          <h1 className="text-[227px] font-bold leading-[175px] text-left w-[242px] h-[116px] lg:text-[200px] lg:w-[1123px] lg:h-[408px]">Webistes & Branding</h1>
+          <button className="flex p-[32px] rounded-full bg-[#141414] w-[231px] h-[92px] justify-center items-center mt-[16px] mb-[20px]">SCROLL DOWN <ArrowDownIcon className="text-white w-[24px] h-[24px] ml-[5px]" /> </button>
+
+        </div>
+        <div className="w-full flex justify-end items-center">
+
+          <button className="flex p-[8px] rounded-full bg-[#141414] w-[200px] h-[50px] justify-center items-center mt-[16px] mb-[20px] md:hidden">SCROLL DOWN <ArrowDownIcon className="text-white w-[24px] h-[24px] ml-[5px]" /> </button>
+        </div>
         <div className="flex justify-between space-x-10">
           <div className="flex flex-col">
 
@@ -40,7 +50,7 @@ export default function Home() {
       <div>
         <div className="flex justify-between">
           <h1 className="text-[24px] font-medium">Projects</h1>
-          <button className="text-[14px] font-medium">More</button>
+          <button className="flex text-[14px] font-medium justify-center items-center">More <ArrowRightIcon className="w-[16px] h-[16px] text-white ml-[5px]" /> </button>
         </div>
         <p className="text-[14px] mb-[35px]">As a seasoned creator of contemporary, user-friendly web designs and digital solutions, I aim to assist you in constructing the brand of your fantasies.</p>
         <div className="mb-[49px]">
