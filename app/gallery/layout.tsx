@@ -1,12 +1,13 @@
 import Sidenav from "./sidenav";
+import '../globals.css';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-            <div className="px-[100px] pt-[100px] w-full flex-none md:w-64">
+        <div className="flex h-screen flex-col md:flex-row md:overflow-hidden ">
+            <div className="md:w-[420px] flex-none bg-slate-400">
                 <Sidenav />
             </div>
-            <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+            <div className="flex-grow md:overflow-y-auto md:pr-[100px] md:pt-[100px]">{children}</div>
         </div>
     );
 }

@@ -1,6 +1,5 @@
-import Sidenav from "./sidenav";
-
-
 export default function Page() {
-    <Sidenav></Sidenav>
+    <main>
+        <h1 className="text-white text-[500px]">mike</h1>
+    </main>
 }

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Page() {
     return (
-        <main className="h-screen flex flex-col items-center justify-center px-4">
+        <main className="h-screen flex flex-col items-center justify-center px-4 border border-red-100">
             <div className="text-center space-y-2 mb-8">
                 <h1 className="text-[64px] sm:text-5xl md:text-[64px] font-bold">Omikhe</h1>
                 <h2 className="text-[16px] sm:text-base text-gray-500">Graphic Designer</h2>
