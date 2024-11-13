@@ -2,23 +2,25 @@ import Link from 'next/link';
 
 export default function Page() {
     return (
-        <main className="h-screen flex flex-col justify-between px-[16px] py-[32px]">
-            <div className="flex-1 flex flex-col justify-center">
-                <div className="flex flex-col items-center mb-[32px]">
-                    <h1 className="text-5xl sm:text-6xl font-bold">Omikhe</h1>
-                    <h2 className="text-[16px] text-[#878787]">Graphic Designer</h2>
-                </div>
-                <ul className="flex items-center justify-center gap-4">
-                    <li><Link href={'https://wa.me/265985626249'}>WhatsApp</Link></li>
-                    <div className="w-[5px] h-[5px] bg-[#878787] rounded-full"></div>
-                    <li>Email</li>
-                    <div className="w-[5px] h-[5px] bg-[#878787] rounded-full"></div>
-                    <li><Link href={'https://instagram.com/omikhe_'}>Instagram</Link></li>
-                    <div className="w-[5px] h-[5px] bg-[#878787] rounded-full"></div>
-                    <li><Link href={'https://www.behance.net/mikemsaka'}>Behence</Link></li>
-                </ul>
+        <main className="h-screen flex flex-col items-center justify-center px-4">
+            <div className="text-center space-y-2 mb-8">
+                <h1 className="text-[64px] sm:text-5xl md:text-[64px] font-bold">Omikhe</h1>
+                <h2 className="text-[16px] sm:text-base text-gray-500">Graphic Designer</h2>
             </div>
-            <h3 className="text-center text-[#878787]">&#169; 2024 Omikhe</h3>
+
+            <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+                <Link href="https://wa.me/265985626249">WhatsApp</Link>
+                <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                <Link href="mailto:omikhe265@gmail.com">Email</Link>
+                <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                <Link href="https://instagram.com/omikhe_">Instagram</Link>
+                <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                <Link href="https://www.behance.net/mikemsaka">Behance</Link>
+            </div>
+
+            <div className="absolute bottom-4 text-sm text-gray-500">
+                &#169; 2024 Omikhe
+            </div>
         </main>
     );
 }
