@@ -43,12 +43,12 @@ export default function Sidenav() {
                     I stand at the precipice of day and night, my camera a loyal companion in my quest to capture the ineffable. With each sunset I frame, I bear witness to the death and rebirth of possibility—a daily ritual that reminds me that life is a constant interplay of order and chaos.
                 </p>
 
-                <nav className="flex flex-col hover:md:text-white md:mb-[160px] md:font-semibold">
+                <nav className="flex flex-col  md:mb-[160px] md:font-semibold">
                     {navLinks.map(({ href, label }) => (
                         <Link
                             key={href}
                             href={href}
-                            className="md:w-full md:h-[54px] hover:md:bg-black flex items-center justify-start md:p-[16px]"
+                            className="md:w-full md:h-[54px] hover:md:bg-black hover:md:text-white flex items-center justify-start md:p-[16px] transition-colors duration-300"
                         >
                             {label}
                         </Link>
