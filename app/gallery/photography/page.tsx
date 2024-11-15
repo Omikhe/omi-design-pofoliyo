@@ -2,13 +2,6 @@
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 
-const images = [
-
-    ,
-    ,
-
-]
-
 const slides = [
     {
         src: "https://i.pinimg.com/474x/73/70/f3/7370f3888d39a0aa06165b0ed0fda7fb.jpg",
