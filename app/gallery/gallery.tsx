@@ -25,7 +25,6 @@ interface GalleryProps {
 
 export default function Gallery({
     slides = [], // Provide default empty array
-    columns = { mobile: 1, tablet: 2, desktop: 4 },
     className = ""
 }: GalleryProps) {
     const [open, setOpen] = useState<boolean>(false);
@@ -41,12 +40,10 @@ export default function Gallery({
         setOpen(true);
     };
 
-    const getColumnsClass = () => {
-        return `columns-${columns.mobile} sm:columns-${columns.tablet} lg:columns-${columns.desktop}`;
-    };
+
 
     return (
-        <div className={`${getColumnsClass()} py-10 md:py-20 gap-4 ${className}`}>
+        <div className={`columns-1 sm:columns-3 lg:columns-4 py-10 md:py-20 gap-4 ${className}`}>
             <Lightbox
                 className="backdrop-blur-lg"
                 plugins={[Captions, Counter, Fullscreen]}
@@ -59,10 +56,7 @@ export default function Gallery({
 
             {slides.map((slide, index) => (
                 <div key={index} className="mb-4 break-inside-avoid">
-                    <button
-                        onClick={() => handleImageClick(index)}
-                        className="w-auto bg-slate-400"
-                    >
+                    <button onClick={() => handleImageClick(index)} className="w-auto bg-slate-400">
                         <img src={slide.src} alt={slide.title} className="w-full object-cover" />
                     </button>
                 </div>
