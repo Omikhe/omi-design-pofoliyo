@@ -1,4 +1,4 @@
-export const slides = [
+const slides = [
     {
         src: "https://i.pinimg.com/474x/73/70/f3/7370f3888d39a0aa06165b0ed0fda7fb.jpg",
         title: "Serene Mountain Escape",
@@ -85,3 +85,5 @@ export const slides = [
         description: "Explore the sculptural beauty of towering sand dunes under a vast, open sky."
     }
 ]
+
+export default slides;
