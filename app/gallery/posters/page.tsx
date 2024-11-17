@@ -1,11 +1,14 @@
+import Gallery from '../gallery'
+import photoSlides from "../photography/slides"
+
 export default function Page() {
     return (
-        <main className="h-screen flex flex-col items-center justify-center px-4">
-            <div className="text-center space-y-2 mb-8">
-                <h1 className="text-[32px] sm:text-5xl md:text-[64px] font-bold animate-pulse">Site{"'"}s Cooking</h1>
-                <h2 className="text-sm sm:text-base text-gray-500">Thank you for your patience</h2>
-            </div>
-
-        </main>
-    );
+        <section className="container mx-auto px-4">
+            <Gallery
+                slides={photoSlides}
+                columns={{ mobile: 1, tablet: 3, desktop: 4 }} // Custom column layout
+                className="gap-6" // Custom gap
+            />
+        </section>
+    )
 }
