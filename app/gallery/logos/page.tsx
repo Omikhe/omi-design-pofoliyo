@@ -1,5 +1,5 @@
 import Gallery from '../gallery'
-import logoSlides from "../photography/slides"
+import logoSlides from "./slides"
 
 export default function Page() {
     return (
