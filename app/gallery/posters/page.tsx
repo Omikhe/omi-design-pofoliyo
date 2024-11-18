@@ -1,5 +1,5 @@
 import Gallery from '../gallery'
-import photoSlides from "../photography/slides"
+import photoSlides from "./slides"
 
 export default function Page() {
     return (
