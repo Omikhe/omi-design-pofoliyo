@@ -89,7 +89,7 @@ export default function Sidenav() {
             </div>
 
             <Link href="https://wa.me/265985626249" className="block md:hidden opacity-50 fixed bottom-4 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-2 rounded-full cursor-pointer active:opacity-100">
-  Let's talk!
+  Let&apos;s talk!
 </Link>
             <h1 className="hidden md:block md:mt-[16px] md:mb-[16px]">Cooked in Malawi</h1>
 
