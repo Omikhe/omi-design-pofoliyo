@@ -1,5 +1,9 @@
+import Photography from "./photography/page"
+
 export default function Page() {
-    <main>
-        <h1 className="text-white text-[500px]">mike</h1>
+    return(
+        <main>
+        <Photography/>
     </main>
+    )
 }
