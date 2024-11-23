@@ -43,7 +43,7 @@ export default function Gallery({
 
 
     return (
-        <div className={`columns-1 sm:columns-3 lg:columns-4 py-10 md:py-20 gap-4 ${className}`}>
+        <div className={`columns-1 sm:columns-3 lg:columns-4 md:py-20 gap-4 ${className}`}>
             <Lightbox
                 className="backdrop-blur-lg"
                 plugins={[Captions, Counter, Fullscreen]}

@@ -35,9 +35,9 @@ const socialLinks = [{
 ];
 
 const navLinks = [
-    { href: "/gallery/photography", label: "PHOTOGRAPHY" },
+    { href: "/gallery/posters", label: "FLYERS" },
     { href: "/gallery/logos", label: "LOGOS" },
-    { href: "/gallery/posters", label: "FLYERS & POSTERS" },
+    { href: "/gallery/photography", label: "PHOTOGRAPHY" },
     { href: "/gallery/about", label: "ABOUT" }
 ];
 
@@ -46,24 +46,24 @@ export default function Sidenav() {
 
     return (
         <main className="flex flex-col md:h-full px-3 py-4 md:pl-[50px] md:pt-[50px] md:w-full">
-            <div className="md:mb-[53px] md:w-full">
-                <h1 className="md:text-[32px] md:font-bold mb-[5px]">Mike Andrew Msaka</h1>
+            <div className="text-center md:text-left mb-[32px] md:mb-[53px] md:w-full">
+                <h1 className="text-[32px] font-bold md:text-[32px] md:font-bold md:mb-[5px]">Mike Andrew Msaka</h1>
                 <h2>Graphic designer but I kinda code</h2>
             </div>
 
             <div className="md:w-[295px]">
-                <p className="mb-[88px]">
+                <p className="hidden md:block mb-[32px] md:mb-[88px]">
                     I stand at the precipice of day and night, my camera a loyal companion in my quest to capture the ineffable. With each sunset I frame, I bear witness to the death and rebirth of possibility—a daily ritual that reminds me that life is a constant interplay of order and chaos.
                 </p>
 
-                <nav className="flex flex-col  md:mb-[160px] md:font-semibold">
+                <nav className="flex border-b-2 md:border-none justify-between md:flex-col  md:mb-[160px] md:font-semibold">
                     {navLinks.map((link) => (
                         <Link
 
                             key={link.href}
                             href={link.href}
-                            className={clsx("md:w-full md:h-[54px] hover:md:bg-black hover:md:text-white flex items-center justify-start md:p-[16px] transition-colors duration-300", {
-                                "md:bg-black md:text-white": pathname === link.href,
+                            className={clsx("md:border-none md:w-full md:h-[54px] hover:md:bg-black hover:md:text-white flex items-center justify-start md:p-[16px] transition-colors duration-300", {
+                                "border-b-2 border-[#000000] md:bg-black md:text-white": pathname === link.href,
                             },)}
                         >
                             {link.label}
@@ -72,7 +72,7 @@ export default function Sidenav() {
                 </nav>
 
 
-                <div className="flex gap-4 md:mb-[88px]">
+                <div className="hidden md:block flex md:flex gap-4 md:mb-[88px]">
                     {socialLinks.map(({ href, icon, label }) => (
                         <Link
                             key={href}
@@ -87,7 +87,11 @@ export default function Sidenav() {
                     ))}
                 </div>
             </div>
-            <h1 className="mt-[16px] mb-[16px]">Cooked in Malawi</h1>
+
+            <Link href="https://wa.me/265985626249" className="block md:hidden opacity-50 fixed bottom-4 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-2 rounded-full cursor-pointer active:opacity-100">
+  Let's talk!
+</Link>
+            <h1 className="hidden md:block md:mt-[16px] md:mb-[16px]">Cooked in Malawi</h1>
 
 
         </main>
