@@ -56,7 +56,7 @@ export default function Gallery({
 
             {slides.map((slide, index) => (
                 <div key={index} className="mb-4 break-inside-avoid">
-                    <button onClick={() => handleImageClick(index)} className="w-auto bg-slate-400">
+                    <button onClick={() => handleImageClick(index)} className="w-auto bg-white">
                         <img src={slide.src} alt={slide.title} className="w-full object-cover" />
                     </button>
                 </div>
