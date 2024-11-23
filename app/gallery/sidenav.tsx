@@ -37,7 +37,7 @@ const socialLinks = [{
 const navLinks = [
     { href: "/gallery/photography", label: "PHOTOGRAPHY" },
     { href: "/gallery/logos", label: "LOGOS" },
-    { href: "/gallery/posters", label: "POSTERS" },
+    { href: "/gallery/posters", label: "FLYERS & POSTERS" },
     { href: "/gallery/about", label: "ABOUT" }
 ];
 
