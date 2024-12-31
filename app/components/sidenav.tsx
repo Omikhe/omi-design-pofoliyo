@@ -80,7 +80,7 @@ export default function Sidenav() {
             <div className="flex flex-col justify-between gap-16">
                 <div className="flex items-center w-full">
                     {/* Profile image */}
-                    <Image src={"/profile-picture.jpg"} width={64} height={64} alt={"cariculture of mike msaka"} className="flex-shrink-0 w-16 h-16 rounded-full bg-white mr-4"></Image>
+                    <Image src={"/profile-picture.jpg"} width={64} height={64} alt={"cariculture of mike msaka"} className="flex-shrink-0 w-16 h-16 rounded-full mr-4"></Image>
 
                     {/* Text content */}
                     <div className="text-left w-full text-nowrap">
@@ -96,7 +96,7 @@ export default function Sidenav() {
                         I&apos;m a graphic designer who also dabbles in front-end development and amateur photography. I love using my phone to capture moments, especially sunsets, which remind me of life&apos;s balance between chaos and calm.
                     </p>
 
-                    <nav className="flex border-b-2 md:border-none justify-between md:flex-col md:font-semibold">
+                    <nav className="flex border-b-2 md:border-none justify-between md:flex-col md:font-semibold gap-4">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
