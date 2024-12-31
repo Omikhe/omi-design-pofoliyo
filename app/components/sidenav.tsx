@@ -37,7 +37,7 @@ const socialLinks = [{
 
 const navLinks = [
     {
-        href: "/gallery/posters",
+        href: "/design",
         label: "Design",
         icon: <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M20.4999 9.66665C20.9602 9.66665 21.3333 9.29355 21.3333 8.83331C21.3333 8.37308 20.9602 7.99998 20.4999 7.99998C20.0397 7.99998 19.6666 8.37308 19.6666 8.83331C19.6666 9.29355 20.0397 9.66665 20.4999 9.66665Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -48,7 +48,7 @@ const navLinks = [
         </svg>
     },
     {
-        href: "/gallery/logos",
+        href: "/webdev",
         label: "Web Development",
         icon: <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M27.9999 21.6667L34.6666 15L27.9999 8.33335M7.99992 8.33335L1.33325 15L7.99992 21.6667M22.1666 1.66669L13.8333 28.3334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -56,7 +56,7 @@ const navLinks = [
 
     },
     {
-        href: "/gallery/photography",
+        href: "/photography",
         label: "Photography",
         icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24.1666 6.66669H15.8333L11.6666 11.6667H6.66659C5.78253 11.6667 4.93468 12.0179 4.30956 12.643C3.68444 13.2681 3.33325 14.116 3.33325 15V30C3.33325 30.8841 3.68444 31.7319 4.30956 32.357C4.93468 32.9822 5.78253 33.3334 6.66659 33.3334H33.3333C34.2173 33.3334 35.0652 32.9822 35.6903 32.357C36.3154 31.7319 36.6666 30.8841 36.6666 30V15C36.6666 14.116 36.3154 13.2681 35.6903 12.643C35.0652 12.0179 34.2173 11.6667 33.3333 11.6667H28.3333L24.1666 6.66669Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -64,7 +64,7 @@ const navLinks = [
         </svg>
     },
     {
-        href: "/gallery/about",
+        href: "/about",
         label: "About",
         icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M26.6667 3.33334V6.66668M29.8583 36.6667C29.8583 34.0145 28.8048 31.471 26.9294 29.5956C25.054 27.7202 22.5105 26.6667 19.8583 26.6667C17.2062 26.6667 14.6626 27.7202 12.7873 29.5956C10.9119 31.471 9.85833 34.0145 9.85833 36.6667M13.3333 3.33334V6.66668M26.6667 20C26.6667 23.6819 23.6819 26.6667 20 26.6667C16.3181 26.6667 13.3333 23.6819 13.3333 20C13.3333 16.3181 16.3181 13.3333 20 13.3333C23.6819 13.3333 26.6667 16.3181 26.6667 20ZM8.33333 6.66668H31.6667C33.5076 6.66668 35 8.15906 35 10V33.3333C35 35.1743 33.5076 36.6667 31.6667 36.6667H8.33333C6.49238 36.6667 5 35.1743 5 33.3333V10C5 8.15906 6.49238 6.66668 8.33333 6.66668Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -91,7 +91,7 @@ export default function Sidenav() {
 
 
 
-                <div className="flex flex-col gap-20 md:w-[295px]">
+                <div className="flex flex-col gap-20">
                     <p className="">
                         I&apos;m a graphic designer who also dabbles in front-end development and amateur photography. I love using my phone to capture moments, especially sunsets, which remind me of life&apos;s balance between chaos and calm.
                     </p>

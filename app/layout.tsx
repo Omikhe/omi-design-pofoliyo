@@ -17,10 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html className={`flex h-screen flex-col md:flex-row md:overflow-hidden ${inter.className}`}>
-      <body className="sticky top-0 bg-[#282828] md:w-[495px] flex-none">
-        <Sidenav />
+      <body className='flex'>
+        <div className="sticky top-0 bg-[#282828] md:w-[495px] flex-none">
+          <Sidenav />
+        </div>
+        <div className="flex-grow md:overflow-y-auto md:pt-[50px]">{children}</div>
       </body>
-      <div className="flex-grow md:overflow-y-auto md:pr-[50px] md:pt-[50px]">{children}</div>
     </html>
   );
 }
