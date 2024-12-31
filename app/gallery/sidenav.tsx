@@ -1,13 +1,14 @@
 'use client'
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 
 import Link from 'next/link';
 const socialLinks = [{
     href: "https://x.com/mikemsaka/",
     icon: <svg className="w-[24px] h-[24px]" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M18.901 1.15308H22.581L14.541 10.3431L24 22.8461H16.594L10.794 15.2621L4.156 22.8461H0.474L9.074 13.0161L0 1.15408H7.594L12.837 8.08608L18.901 1.15308ZM17.61 20.6441H19.649L6.486 3.24008H4.298L17.61 20.6441Z" fill="black" />
+        <path d="M18.901 1.15308H22.581L14.541 10.3431L24 22.8461H16.594L10.794 15.2621L4.156 22.8461H0.474L9.074 13.0161L0 1.15408H7.594L12.837 8.08608L18.901 1.15308ZM17.61 20.6441H19.649L6.486 3.24008H4.298L17.61 20.6441Z" />
     </svg>,
     label: "X"
 },
@@ -35,65 +36,107 @@ const socialLinks = [{
 ];
 
 const navLinks = [
-    { href: "/gallery/posters", label: "FLYERS" },
-    { href: "/gallery/logos", label: "LOGOS" },
-    { href: "/gallery/photography", label: "PHOTOGRAPHY" },
-    { href: "/gallery/about", label: "ABOUT" }
+    {
+        href: "/gallery/posters",
+        label: "Design",
+        icon: <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.4999 9.66665C20.9602 9.66665 21.3333 9.29355 21.3333 8.83331C21.3333 8.37308 20.9602 7.99998 20.4999 7.99998C20.0397 7.99998 19.6666 8.37308 19.6666 8.83331C19.6666 9.29355 20.0397 9.66665 20.4999 9.66665Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M27.1666 16.3333C27.6268 16.3333 27.9999 15.9602 27.9999 15.5C27.9999 15.0397 27.6268 14.6666 27.1666 14.6666C26.7063 14.6666 26.3333 15.0397 26.3333 15.5C26.3333 15.9602 26.7063 16.3333 27.1666 16.3333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12.1666 11.3333C12.6268 11.3333 12.9999 10.9602 12.9999 10.5C12.9999 10.0397 12.6268 9.66665 12.1666 9.66665C11.7063 9.66665 11.3333 10.0397 11.3333 10.5C11.3333 10.9602 11.7063 11.3333 12.1666 11.3333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8.83325 19.6666C9.29349 19.6666 9.66659 19.2935 9.66659 18.8333C9.66659 18.3731 9.29349 18 8.83325 18C8.37301 18 7.99992 18.3731 7.99992 18.8333C7.99992 19.2935 8.37301 19.6666 8.83325 19.6666Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M17.9999 1.33331C8.83325 1.33331 1.33325 8.83331 1.33325 18C1.33325 27.1666 8.83325 34.6666 17.9999 34.6666C19.5433 34.6666 20.7466 33.4233 20.7466 31.8533C20.7466 31.125 20.4466 30.4616 20.0183 29.9783C19.5349 29.4966 19.2883 28.8916 19.2883 28.1033C19.2819 27.7365 19.3495 27.3722 19.487 27.032C19.6245 26.6919 19.829 26.3829 20.0884 26.1235C20.3478 25.8641 20.6568 25.6595 20.997 25.5221C21.3371 25.3846 21.7014 25.317 22.0683 25.3233H25.3949C30.4799 25.3233 34.6533 21.1516 34.6533 16.0666C34.6083 8.01998 27.1016 1.33331 17.9999 1.33331Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    },
+    {
+        href: "/gallery/logos",
+        label: "Web Development",
+        icon: <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.9999 21.6667L34.6666 15L27.9999 8.33335M7.99992 8.33335L1.33325 15L7.99992 21.6667M22.1666 1.66669L13.8333 28.3334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+    },
+    {
+        href: "/gallery/photography",
+        label: "Photography",
+        icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.1666 6.66669H15.8333L11.6666 11.6667H6.66659C5.78253 11.6667 4.93468 12.0179 4.30956 12.643C3.68444 13.2681 3.33325 14.116 3.33325 15V30C3.33325 30.8841 3.68444 31.7319 4.30956 32.357C4.93468 32.9822 5.78253 33.3334 6.66659 33.3334H33.3333C34.2173 33.3334 35.0652 32.9822 35.6903 32.357C36.3154 31.7319 36.6666 30.8841 36.6666 30V15C36.6666 14.116 36.3154 13.2681 35.6903 12.643C35.0652 12.0179 34.2173 11.6667 33.3333 11.6667H28.3333L24.1666 6.66669Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M19.9999 26.6667C22.7613 26.6667 24.9999 24.4281 24.9999 21.6667C24.9999 18.9053 22.7613 16.6667 19.9999 16.6667C17.2385 16.6667 14.9999 18.9053 14.9999 21.6667C14.9999 24.4281 17.2385 26.6667 19.9999 26.6667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    },
+    {
+        href: "/gallery/about",
+        label: "About",
+        icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.6667 3.33334V6.66668M29.8583 36.6667C29.8583 34.0145 28.8048 31.471 26.9294 29.5956C25.054 27.7202 22.5105 26.6667 19.8583 26.6667C17.2062 26.6667 14.6626 27.7202 12.7873 29.5956C10.9119 31.471 9.85833 34.0145 9.85833 36.6667M13.3333 3.33334V6.66668M26.6667 20C26.6667 23.6819 23.6819 26.6667 20 26.6667C16.3181 26.6667 13.3333 23.6819 13.3333 20C13.3333 16.3181 16.3181 13.3333 20 13.3333C23.6819 13.3333 26.6667 16.3181 26.6667 20ZM8.33333 6.66668H31.6667C33.5076 6.66668 35 8.15906 35 10V33.3333C35 35.1743 33.5076 36.6667 31.6667 36.6667H8.33333C6.49238 36.6667 5 35.1743 5 33.3333V10C5 8.15906 6.49238 6.66668 8.33333 6.66668Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    }
 ];
 
 export default function Sidenav() {
     const pathname = usePathname();
 
     return (
-        <main className="flex flex-col md:h-full px-3 py-4 md:pl-[50px] md:pt-[50px] md:w-full">
-            <div className="text-center md:text-left mb-[32px] md:mb-[53px] md:w-full">
-                <h1 className="text-[32px] font-bold md:text-[32px] md:font-bold md:mb-[5px]">Mike Andrew Msaka</h1>
-                <h2>Graphic designer but I kinda code</h2>
-            </div>
+        <main className="flex flex-col md:h-full md:py-24 md:px-20 md:w-full p-4">
+            <div className="flex flex-col justify-between gap-16">
+                <div className="flex items-center w-full">
+                    {/* Profile image */}
+                    <Image src={"/profile-picture.jpg"} width={64} height={64} alt={"cariculture of mike msaka"} className="flex-shrink-0 w-16 h-16 rounded-full bg-white mr-4"></Image>
 
-            <div className="md:w-[295px]">
-                <p className="hidden md:block mb-[32px] md:mb-[88px]">
-                    I stand at the precipice of day and night, my camera a loyal companion in my quest to capture the ineffable. With each sunset I frame, I bear witness to the death and rebirth of possibility—a daily ritual that reminds me that life is a constant interplay of order and chaos.
-                </p>
-
-                <nav className="flex border-b-2 md:border-none justify-between md:flex-col  md:mb-[160px] md:font-semibold">
-                    {navLinks.map((link) => (
-                        <Link
-
-                            key={link.href}
-                            href={link.href}
-                            className={clsx("md:border-none md:w-full md:h-[54px] hover:md:bg-black hover:md:text-white flex items-center justify-start md:p-[16px] transition-colors duration-300", {
-                                "border-b-2 border-[#000000] md:bg-black md:text-white": pathname === link.href,
-                            },)}
-                        >
-                            {link.label}
-                        </Link>
-                    ))}
-                </nav>
-
-
-                <div className="hidden md:block flex md:flex gap-4 md:mb-[88px]">
-                    {socialLinks.map(({ href, icon, label }) => (
-                        <Link
-                            key={href}
-                            href={href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-gray-600 transition-colors duration-200"
-                            aria-label={label}
-                        >
-                            {icon}
-                        </Link>
-                    ))}
+                    {/* Text content */}
+                    <div className="text-left w-full text-nowrap">
+                        <h1 className="text-2xl font-bold">Mike Andrew Msaka</h1>
+                        <h2 className="text-[#565656]">Graphic designer but I kinda code</h2>
+                    </div>
                 </div>
+
+
+
+                <div className="flex flex-col gap-20 md:w-[295px]">
+                    <p className="">
+                        I&apos;m a graphic designer who also dabbles in front-end development and amateur photography. I love using my phone to capture moments, especially sunsets, which remind me of life&apos;s balance between chaos and calm.
+                    </p>
+
+                    <nav className="flex border-b-2 md:border-none justify-between md:flex-col md:font-semibold">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className={clsx("md:border-none md:w-full md:h-[54px] md:gap-4 md:text-[#565656] hover:md:text-[#F2F2F2] md:text-2xl md:font-normal flex items-center justify-start transition-colors duration-300", {
+                                    "border-b-2 md:text-[#F2F2F2]": pathname === link.href,
+                                },)}
+                            >
+                                {link.icon}
+                                {link.label}
+                            </Link>
+                        ))}
+                    </nav>
+
+                    <div className="hidden md:flex gap-4">
+                        {socialLinks.map(({ href, icon, label }) => (
+                            <Link
+                                key={href}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#565656] hover:text-[#F2F2F2] transition-colors duration-200"
+                                aria-label={label}
+                            >
+                                {icon}
+                            </Link>
+                        ))}
+                    </div>
+
+                </div>
+                <div>
+
+                    <Link href="https://wa.me/265985626249" className="block md:hidden opacity-50 fixed bottom-4 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-2 rounded-full cursor-pointer active:opacity-100">
+                        Let&apos;s talk!
+                    </Link>
+                    <h1 className="text-[#565656] hover:text-[#F2F2F2] transition-colors duration-200">Cooked in Malawi</h1>
+                </div>
+
+
             </div>
-
-            <Link href="https://wa.me/265985626249" className="block md:hidden opacity-50 fixed bottom-4 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-2 rounded-full cursor-pointer active:opacity-100">
-  Let&apos;s talk!
-</Link>
-            <h1 className="hidden md:block md:mt-[16px] md:mb-[16px]">Cooked in Malawi</h1>
-
-
         </main>
     );
 }
