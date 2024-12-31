@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Sidenav from './components/sidenav';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,10 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className}`}>
-        {children}
+    <html className={`flex h-screen flex-col md:flex-row md:overflow-hidden ${inter.className}`}>
+      <body className="sticky top-0 bg-[#282828] md:w-[495px] flex-none">
+        <Sidenav />
       </body>
+      <div className="flex-grow md:overflow-y-auto md:pr-[50px] md:pt-[50px]">{children}</div>
     </html>
   );
 }
