@@ -1,59 +1,18 @@
 import Card from "../components/card";
+import { branding, categories } from "./dataa";
 
-const branding = [
-    {
-        "title": "Valuations Africa",
-        "image": "/branding/valuations-africa.png",
-        "year": "2024",
-        "description": "A unique brand identity for a real estate valuation company, focusing on a professional logo, modern visuals, and consistent branding elements to convey trust and expertise."
-    },
-    {
-        "title": "Ziyemebe Community Radio",
-        "image": "/branding/ziyemebe-radio.png",
-        "year": "2024",
-        "description": "An elegant brand identity for a local Malawian radio station."
-    },
-    {
-        "title": "Valuations Africa",
-        "image": "/branding/valuations-africa.png",
-        "year": "2024",
-        "description": "A unique brand identity for a real estate valuation company, focusing on a professional logo, modern visuals, and consistent branding elements to convey trust and expertise."
-    },
-    {
-        "title": "Ziyemebe Community Radio",
-        "image": "/branding/ziyemebe-radio.png",
-        "year": "2024",
-        "description": "An elegant brand identity for a local Malawian radio station."
-    }
-
-]
-
-const categories = [
-    {
-        lebel: "All Projects"
-    },
-    {
-        lebel: "Branding"
-    },
-    {
-        lebel: "Flyers"
-    },
-    {
-        lebel: "Logos"
-    },
-    {
-        lebel: "Birthday Artworks"
-    },
-
-]
 export default function Design() {
     return (
-        <main className="p-16">
-            <section className="flex gap-4 w-full mb-4">
-                {categories.map((category) => (
-                    <span key={category.lebel} className="flex items-center bg-[#1C1C1C] px-4 py-2 h-9 text-[#8A8A8A] rounded-full hover:bg-[#F2F2F2] hover:text-[#121212] transition-colors duration-300">{category.lebel}</span>
-                ))}
-            </section>
+        <main className="p-4 md:p-16">
+
+            <div className="my-8">
+                <h2 className="text-4xl font-semibold mb-8 md:hidden">🎨 Design</h2>
+                <section className="flex flex-wrap gap-4 w-full">
+                    {categories.map((category) => (
+                        <span key={category.label} className="flex items-center bg-[#1C1C1C] px-4 py-2 h-9 text-[#8A8A8A] rounded-full hover:bg-[#F2F2F2] hover:text-[#121212] active:bg-[#F2F2F2] active:text-[#121212] transition-colors duration-300">{category.label}</span>
+                    ))}
+                </section>
+            </div>
 
 
             {/* Grid container for cards */}
