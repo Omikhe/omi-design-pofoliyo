@@ -1,4 +1,4 @@
-export default function Home() {
+export default function About() {
     return (
         <main className="h-screen w-screen flex flex-col items-center justify-center gap-2">
             <span className="animate-pulse text-4xl font-semibold">Still cooking 👨🏿‍🍳</span>
