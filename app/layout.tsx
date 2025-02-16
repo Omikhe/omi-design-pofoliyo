@@ -1,28 +1,28 @@
-import type { Metadata } from 'next';
+'use client'
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Sidenav from './components/sidenav';
-import Footer from './components/footer'
+import Footer from './components/footer';
+import { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
-
-export const metadata: Metadata = {
-  title: 'Omikhe\'s Pofoliyo',
-  description: 'Omikhe\'s graphic design portfolio',
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
   return (
-    <html className={`flex h-screen flex-col md:flex-row md:overflow-hidden ${inter.className}`}>
-      <body className="flex flex-col md:flex md:flex-row">
-        <div className="w-auto h-auto sticky top-0 bg-[#282828] md:w-[495px] flex-none z-50">
-          <Sidenav />
+    <html className={`h-screen ${inter.className}`}>
+      <body className="h-full flex flex-col md:flex-row">
+        <div className={`h-auto sticky top-0 bg-[#282828] ${isCollapsed ? 'md:w-20' : 'md:w-96'} flex-none z-50 transition-all duration-300`}>
+          <Sidenav isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
         </div>
-        <div className="flex-grow md:overflow-y-auto md:pt-[50px]">{children}</div>
+        <main className=" min-w-0 h-full overflow-y-auto">
+          {children}
+        </main>
         <div className="md:hidden block">
           <Footer />
         </div>
