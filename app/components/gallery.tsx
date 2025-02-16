@@ -27,7 +27,6 @@ interface GalleryProps {
 
 const GalleryImage = ({
     slide,
-    index,
     onClick,
     priority = false
 }: {
