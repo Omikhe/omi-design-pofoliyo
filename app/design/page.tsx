@@ -7,10 +7,21 @@ const Design = () => {
     const [activeCategory, setActiveCategory] = useState("All Projects");
 
     // Combine all your project types into one array
+    // Add empty shots array if not present
     const allProjects = [
-        ...branding.map(item => ({ ...item, type: "Branding" })),
-        ...flyers.map(item => ({ ...item, type: "Flyers" })),
-        ...logos.map(item => ({ ...item, type: "Logos" })),
+        ...branding.map(item => ({
+            ...item,
+            type: "Branding",
+            shots: item.shots || []
+        })),
+        ...flyers.map(item => ({
+            ...item,
+            type: "Flyers"
+        })),
+        ...logos.map(item => ({
+            ...item,
+            type: "Logos"
+        })),
     ];
 
     // Filter projects based on active category
@@ -19,7 +30,7 @@ const Design = () => {
         : allProjects.filter(project => project.type === activeCategory);
 
     return (
-        <main className="p-4 md:p-16">
+        <main className="p-4 md:px-16 scrollbar-none">
             <div className="my-8">
                 <h2 className="text-4xl font-semibold mb-8 md:hidden">🎨 Design</h2>
                 <section className="flex flex-wrap gap-4 w-full">

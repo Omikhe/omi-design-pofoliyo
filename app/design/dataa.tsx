@@ -3,15 +3,23 @@ export const branding = [
         "title": "Valuations Africa",
         "image": "/branding/valuations-africa.png",
         "year": "2024",
-        "description": "A unique brand identity for a real estate valuation company, focusing on a professional logo, modern visuals, and consistent branding elements to convey trust and expertise."
+        "description": "A unique brand identity for a real estate valuation company, focusing on a professional logo, modern visuals, and consistent branding elements to convey trust and expertise.",
+        "shots": [
+            "/branding/valuations-africa-shot.png",
+            "/flyers/1T1.jpg",
+            "/flyers/Angie's Beauty Palour_flyer_001.jpg"
+        ]
     },
     {
         "title": "Ziyemebe Community Radio",
         "image": "/branding/ziyemebe-radio.png",
         "year": "2024",
-        "description": "An elegant brand identity for a local Malawian radio station."
+        "description": "An elegant brand identity for a local Malawian radio station.",
+        "shots": [
+            "/branding/ziyemebe-radio-shot1.png",
+            "/branding/ziyemebe-radio-shot2.png"
+        ]
     }
-
 ];
 
 export const flyers = [
