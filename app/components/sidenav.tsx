@@ -29,7 +29,7 @@ export default function Sidenav({ isCollapsed, setIsCollapsed }: SidenavProps) {
                         width={64}
                         height={64}
                         alt={"Cariculture of Mike Msaka's head"}
-                        className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'md:size-12' : 'md:size-16'} size-10 flex-shrink-0 rounded-full mr-4`}
+                        className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'md:size-8' : 'md:size-16'} size-10 flex-shrink-0 rounded-full mr-4`}
                     />
 
                     {/* Text content with fade transition */}
@@ -42,10 +42,7 @@ export default function Sidenav({ isCollapsed, setIsCollapsed }: SidenavProps) {
                     </div>
                 </div>
 
-                <div className={`md:flex flex-col gap-20 transition-all duration-300 ease-in-out ${isCollapsed
-                    ? 'opacity-0 transform scale-95 hidden'
-                    : 'opacity-100 transform scale-100 hidden md:flex'
-                    }`}>
+                <div className={`md:flex flex-col gap-20 transition-all duration-300 ease-in-out`}>
                     <p className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'hidden' : 'hidden md:flex'}`}>
                         I&apos;m a graphic designer who also dabbles in front-end development and amateur photography. I love using my phone to capture moments, especially sunsets, which remind me of life&apos;s balance between chaos and calm.
                     </p>
